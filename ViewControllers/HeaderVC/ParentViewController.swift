@@ -242,7 +242,7 @@ class ParentViewController: UIViewController, HeaderViewDelegate {
 
         if UIDevice().userInterfaceIdiom == .phone {
             switch UIScreen.main.nativeBounds.height {
-            case 2436,2688:
+            case 2436,2688,2532:
                 frame = CGRect(x: CGFloat(0), y: CGFloat(-20), width: screenWidth, height: CGFloat(heightWithoutLabelForX))
             default:
                 print("unknown")
@@ -302,9 +302,17 @@ class ParentViewController: UIViewController, HeaderViewDelegate {
                     if ((result as! NSDictionary).object(forKey: "duty") as! String == "off") {
                         self.headerView?.btnSwitch.setImage(UIImage(named: "iconOffSwitch"), for: .normal)
                         Singletons.sharedInstance.driverDuty = "0"
-                        if let isTimeOutDriver = UserDefaults.standard.value(forKey: "isTimeOutDriver") {
-                            UserDefaults.standard.set(false, forKey: "isTimeOutDriver")
-                        }else {
+//                        if let isTimeOutDriver = UserDefaults.standard.value(forKey: "isTimeOutDriver") {
+//                            UserDefaults.standard.set(false, forKey: "isTimeOutDriver")
+//                        }else {
+//                            UtilityClass.showAlert((result as! NSDictionary).object(forKey: "message") as! String, message: "", vc: self)
+//                        }
+                        
+                        if let isTimeOutDriver = UserDefaults.standard.value(forKey: "isTimeOutDriver") as? Int {
+                            if isTimeOutDriver == 1 {
+                                self.SwitchOFFClicked()
+                            }
+                        }else{
                             UtilityClass.showAlert((result as! NSDictionary).object(forKey: "message") as! String, message: "", vc: self)
                         }
                         

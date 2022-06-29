@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import SDWebImage
 
 class PassengerInfoViewController: UIViewController,MFMessageComposeViewControllerDelegate {
   

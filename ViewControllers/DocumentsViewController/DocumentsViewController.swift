@@ -8,6 +8,7 @@
 
 import UIKit
 import ActionSheetPicker_3_0
+import SideMenuController
 class DocumentsViewController: ParentViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate,WWCalendarTimeSelectorProtocol {
     let picker = UIImagePickerController()
     

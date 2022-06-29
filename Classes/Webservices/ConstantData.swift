@@ -188,7 +188,7 @@ struct RegistrationFinalKeys
 
 struct socketApiKeys {
     
-    static let kSocketBaseURL =  "https://ezygo.co.nz:8080/"//"http://13.237.0.107:8080/" //"https://pickngolk.info:8081" // "https://pickngolk.info:8081"   // "http://54.169.67.226:8080"  //
+    static let kSocketBaseURL =  "https://ezygo.co.nz:8080/"
     
     static let kUpdateDriverLocation = "UpdateDriverLatLong"
     static let kReceiveBookingRequest = "AriveBookingRequest"
@@ -206,7 +206,7 @@ struct socketApiKeys {
     
     static let kStartHoldTrip = "StartHoldTrip"
     static let kEndHoldTrip = "EndHoldTrip"
-    static let kSendDriverLocationRequestByPassenger        = "DriverLocation"
+    static let kSendDriverLocationRequestByPassenger = "DriverLocation"
     static let kDriverCancelTripNotification = "DriverCancelTripNotification"
     
     static let kAriveAdvancedBookingRequest = "AriveAdvancedBookingRequest"

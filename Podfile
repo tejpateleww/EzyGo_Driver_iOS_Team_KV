@@ -8,7 +8,7 @@ target 'ezygo-Driver' do
   # Pods for ezygo-Driver
 pod 'IQKeyboardManagerSwift'
 pod 'Alamofire'
-pod 'SDWebImage'
+pod 'SDWebImage', '4.4.6'
 pod 'M13Checkbox'
 pod 'Crashlytics'
 pod 'ACFloatingTextfield-Swift'
@@ -20,7 +20,7 @@ pod 'CardIO'
 pod 'GoogleMaps','3.0.3'
 pod 'GooglePlaces','3.0.3'
 #pod 'GooglePlacePicker'
-pod 'SideMenuController'
+pod 'SideMenuController' #0.2.4
 pod 'NVActivityIndicatorView'
 pod 'FloatRatingView'
 

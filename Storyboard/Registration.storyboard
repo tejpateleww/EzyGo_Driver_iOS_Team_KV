@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pKw-Dw-oxc">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pKw-Dw-oxc">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -338,7 +336,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7g-pp-vE5">
-                                <rect key="frame" x="10" y="30" width="44" height="44"/>
+                                <rect key="frame" x="10" y="10" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="FDL-M0-0pT"/>
                                     <constraint firstAttribute="width" constant="44" id="yWM-zz-SfC"/>
@@ -349,6 +347,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="p8w-Hb-wNq"/>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.0078431372549019607" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Egd-62-K7a" firstAttribute="width" secondItem="rZY-F0-r5T" secondAttribute="width" id="1nJ-kj-4lG"/>
@@ -364,7 +363,6 @@
                             <constraint firstItem="T7g-pp-vE5" firstAttribute="leading" secondItem="p8w-Hb-wNq" secondAttribute="leading" constant="10" id="sBX-EF-UyS"/>
                             <constraint firstItem="M4Y-Vk-Hh4" firstAttribute="leading" secondItem="p8w-Hb-wNq" secondAttribute="leading" id="wuh-1X-dcg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="p8w-Hb-wNq"/>
                     </view>
                     <connections>
                         <outlet property="vwProgress1" destination="0Ow-Hv-bgF" id="GMo-Ia-mRP"/>
@@ -399,6 +397,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="a6L-L0-U5r"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="doY-JQ-U1f" firstAttribute="top" secondItem="a6L-L0-U5r" secondAttribute="top" constant="10" id="0gR-VC-wne"/>
@@ -406,7 +405,6 @@
                             <constraint firstItem="doY-JQ-U1f" firstAttribute="leading" secondItem="a6L-L0-U5r" secondAttribute="leading" constant="10" id="5ib-O1-VnX"/>
                             <constraint firstItem="a6L-L0-U5r" firstAttribute="bottom" secondItem="doY-JQ-U1f" secondAttribute="bottom" priority="250" constant="20" id="CS6-Ut-8tT"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="a6L-L0-U5r"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2D-RU-cIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -421,7 +419,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="515.66666666666663"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM5-eK-SSr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM5-eK-SSr">
                                 <rect key="frame" x="20" y="455.66666666666669" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.61469184030000001" green="0.56526692710000004" blue="0.47428385420000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -448,10 +446,10 @@
                                                                 <rect key="frame" x="5" y="0.0" width="144.66666666666666" height="45"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NZ" translatesAutoresizingMaskIntoConstraints="NO" id="rWO-YY-RNj">
-                                                                        <rect key="frame" x="0.0" y="7.6666666666666679" width="56.666666666666664" height="30.000000000000004"/>
+                                                                        <rect key="frame" x="0.0" y="7.6666666666666679" width="57" height="30.000000000000004"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NZ +64" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcj-ME-Xje">
-                                                                        <rect key="frame" x="56.666666666666671" y="14" width="71" height="17"/>
+                                                                        <rect key="frame" x="57.000000000000007" y="14" width="70.666666666666686" height="17"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -482,11 +480,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="M6f-ab-5L8"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -497,11 +494,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="c4H-Uq-q9z"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -518,11 +514,10 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Landline Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVQ-NK-brn">
                                                                 <rect key="frame" x="0.0" y="55" width="394" height="45"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -533,11 +528,10 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yva-5P-knp">
                                                                 <rect key="frame" x="0.0" y="110" width="394" height="45"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -545,11 +539,10 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-xA-3SH">
                                                                 <rect key="frame" x="0.0" y="165" width="394" height="45"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -557,11 +550,10 @@
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xqO-E6-Jd4">
                                                                 <rect key="frame" x="0.0" y="220" width="394" height="45"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -569,7 +561,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEO-7k-Krg">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEO-7k-Krg">
                                                         <rect key="frame" x="10" y="10" width="157.66666666666666" height="45"/>
                                                         <connections>
                                                             <action selector="countryClick:" destination="rSo-FN-Rwv" eventType="touchUpInside" id="KmK-0g-322"/>
@@ -600,16 +592,15 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="ZNU-xl-sHa"/>
                                                         </constraints>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49z-2S-0By">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49z-2S-0By">
                                                         <rect key="frame" x="161.66666666666663" y="70" width="91" height="30.666666666666671"/>
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
@@ -665,6 +656,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="uPe-gn-5q8"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lM5-eK-SSr" firstAttribute="top" secondItem="X1y-1h-8Gw" secondAttribute="bottom" constant="20" id="1ob-1B-UzX"/>
@@ -675,7 +667,6 @@
                             <constraint firstAttribute="trailing" secondItem="lM5-eK-SSr" secondAttribute="trailing" constant="20" id="huY-Fw-hx4"/>
                             <constraint firstItem="lM5-eK-SSr" firstAttribute="leading" secondItem="ghe-nJ-EqW" secondAttribute="leading" constant="20" id="rfh-5h-mPW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="uPe-gn-5q8"/>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="lM5-eK-SSr" id="uBS-K4-0Wg"/>
@@ -704,7 +695,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-b0-Omf">
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-b0-Omf">
                                 <rect key="frame" x="57" y="353" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="250" constant="46" id="jGn-UT-OtK"/>
@@ -712,12 +703,12 @@
                                 <state key="normal" title="sdada dsa dds d d d+"/>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="3qo-9P-D3Y"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ffZ-b0-Omf" firstAttribute="centerY" secondItem="1fd-L4-Gax" secondAttribute="centerY" id="4eb-91-dNS"/>
                             <constraint firstItem="ffZ-b0-Omf" firstAttribute="centerX" secondItem="1fd-L4-Gax" secondAttribute="centerX" id="g1N-pT-JXS"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3qo-9P-D3Y"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIn-Rm-AQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -755,7 +746,7 @@
                                                                 </constraints>
                                                                 <state key="normal" image="plus-icon"/>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgH-xe-eMP">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgH-xe-eMP">
                                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                                 <connections>
                                                                     <action selector="addProfileClick:" destination="iLo-yb-hN4" eventType="touchUpInside" id="Dvm-GV-AbK"/>
@@ -795,11 +786,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="K89-hd-jGL"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -810,11 +800,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="ZTf-Xi-6D1"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -860,11 +849,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="qC4-mS-ReO"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -875,11 +863,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="OWj-aO-W26"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -893,11 +880,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="02B-oj-Zyz"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -908,11 +894,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="uLR-AH-8cP"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -925,11 +910,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="mTY-HW-DeV"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -940,11 +924,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="LiQ-Y9-EVR"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -971,11 +954,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="Q7g-aw-lYQ"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -986,11 +968,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="ebK-kF-MtF"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1010,11 +991,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="QtF-7L-Jn6"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -1025,11 +1005,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="Bwg-o3-N7o"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -1076,11 +1055,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="zTb-WH-t16"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -1091,11 +1069,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="GKl-dE-9Ij"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -1115,11 +1092,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="oiq-Eg-a6p"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1159,7 +1135,7 @@
                                                             <constraint firstAttribute="bottom" secondItem="V3c-SD-69v" secondAttribute="bottom" id="V7L-te-vKI"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hof-F3-bVU">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hof-F3-bVU">
                                                         <rect key="frame" x="10" y="810.33333333333337" width="120" height="45"/>
                                                         <connections>
                                                             <action selector="countryClick:" destination="iLo-yb-hN4" eventType="touchUpInside" id="xcg-Dd-DKO"/>
@@ -1203,7 +1179,7 @@
                                     <constraint firstAttribute="trailing" secondItem="bVs-R5-Du5" secondAttribute="trailing" id="ViH-aJ-xla"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u2-5L-Z3A">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u2-5L-Z3A">
                                 <rect key="frame" x="20" y="1050" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.61469184030000001" green="0.56526692710000004" blue="0.47428385420000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1215,6 +1191,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="mEb-Ch-v5O"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3u2-5L-Z3A" firstAttribute="top" secondItem="Gn4-nI-pF0" secondAttribute="bottom" constant="20" id="62R-gO-vOJ"/>
@@ -1225,7 +1202,6 @@
                             <constraint firstItem="Gn4-nI-pF0" firstAttribute="leading" secondItem="6sC-wA-fak" secondAttribute="leading" id="l68-Hp-bhZ"/>
                             <constraint firstItem="3u2-5L-Z3A" firstAttribute="leading" secondItem="6sC-wA-fak" secondAttribute="leading" constant="20" id="v8x-GK-SAH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mEb-Ch-v5O"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1110"/>
@@ -1289,7 +1265,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWh-b4-0fe">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWh-b4-0fe">
                                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                                 <connections>
                                                                     <action selector="addProfileClick:" destination="iLo-yb-hN4" eventType="touchUpInside" id="4iL-I3-TPs"/>
@@ -1370,11 +1346,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="0Aa-kp-Va5"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1385,11 +1360,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="2xb-0Y-tow"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1400,11 +1374,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="4h8-QW-C1G"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1415,11 +1388,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="MKQ-ED-6Yg"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1459,7 +1431,7 @@
                                     <constraint firstAttribute="bottom" secondItem="lBo-T4-4oh" secondAttribute="bottom" id="z78-UU-7gZ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TI-w7-WMk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TI-w7-WMk">
                                 <rect key="frame" x="20" y="540" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.61469184030000001" green="0.56526692710000004" blue="0.47428385420000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1471,6 +1443,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lcq-6W-6l8"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4TI-w7-WMk" firstAttribute="top" secondItem="MMP-Dw-Ut0" secondAttribute="bottom" constant="20" id="Cjh-yG-yrQ"/>
@@ -1481,7 +1454,6 @@
                             <constraint firstAttribute="trailing" secondItem="4TI-w7-WMk" secondAttribute="trailing" constant="20" id="u3C-HJ-B6d"/>
                             <constraint firstItem="4TI-w7-WMk" firstAttribute="leading" secondItem="MhY-UN-h96" secondAttribute="leading" constant="20" id="z5g-e7-PSt"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Lcq-6W-6l8"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="600"/>
@@ -1551,11 +1523,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="uf4-xq-4lV"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1566,11 +1537,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="vEp-Nw-rNL"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1581,11 +1551,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="mLb-6w-YE5"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1596,11 +1565,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="j9Q-tp-Ts9"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1642,11 +1610,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="dzI-zO-DEa"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1660,11 +1627,10 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="guV-c4-Nng"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
@@ -1732,7 +1698,7 @@
                                     <constraint firstAttribute="bottom" secondItem="6AZ-4r-h0u" secondAttribute="bottom" id="g3A-eS-fqK"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tb-93-RqP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tb-93-RqP">
                                 <rect key="frame" x="20" y="640" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.61469184030000001" green="0.56526692710000004" blue="0.47428385420000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1744,6 +1710,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="n1V-UK-c9d"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PMr-kk-mkl" firstAttribute="leading" secondItem="VE8-oW-Dbp" secondAttribute="leading" id="0ys-tw-EcJ"/>
@@ -1754,7 +1721,6 @@
                             <constraint firstItem="PMr-kk-mkl" firstAttribute="top" secondItem="VE8-oW-Dbp" secondAttribute="top" id="pN0-Yo-OXJ"/>
                             <constraint firstAttribute="bottom" secondItem="7Tb-93-RqP" secondAttribute="bottom" constant="20" id="rVb-py-4oP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="n1V-UK-c9d"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="700"/>
@@ -1806,11 +1772,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="HBQ-fF-hQG"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -1832,7 +1797,7 @@
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9y1-rY-bvK">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9y1-rY-bvK">
                                                                                 <rect key="frame" x="9.6666666666666714" y="7.6666666666666714" width="171.66666666666663" height="30"/>
                                                                                 <connections>
                                                                                     <action selector="selectLicenceExpiryDate:" destination="Fvf-RX-mzX" eventType="touchUpInside" id="09u-k2-23T"/>
@@ -1902,11 +1867,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="Oha-hO-jyV"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -1925,11 +1889,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="gH2-P7-wTo"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2001,11 +1964,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="UV7-gN-uix"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2024,11 +1986,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="Iqr-q9-GXD"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2047,11 +2008,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="LVy-mI-vx9"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2128,11 +2088,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="7E7-mt-fAh"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2167,11 +2126,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="shg-Lm-GUR"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2206,11 +2164,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="az2-jm-ICn"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2245,11 +2202,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="c37-Gq-3ed"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2268,11 +2224,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="knM-0G-t57"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2291,11 +2246,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="xev-nn-bxd"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2330,11 +2284,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="sm7-hv-6Fd"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2400,11 +2353,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="9C2-lA-Stl"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2499,7 +2451,7 @@
                                     <constraint firstAttribute="bottom" secondItem="eRs-Z9-EAI" secondAttribute="bottom" id="njR-Gi-1vV"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROd-Sy-G2j">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROd-Sy-G2j">
                                 <rect key="frame" x="20" y="1140" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.61469184030000001" green="0.56526692710000004" blue="0.47428385420000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -2511,6 +2463,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZfE-9w-3E6"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xiY-fV-azh" firstAttribute="leading" secondItem="xUX-JM-yJa" secondAttribute="leading" id="82j-Cz-RB1"/>
@@ -2521,7 +2474,6 @@
                             <constraint firstItem="xiY-fV-azh" firstAttribute="top" secondItem="xUX-JM-yJa" secondAttribute="top" id="bvG-Br-kNn"/>
                             <constraint firstAttribute="trailing" secondItem="ROd-Sy-G2j" secondAttribute="trailing" constant="20" id="dFF-hp-oG5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZfE-9w-3E6"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1200"/>
@@ -2621,7 +2573,7 @@
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EQ-wD-Bxh">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EQ-wD-Bxh">
                                                                                 <rect key="frame" x="8" y="5" width="287" height="47"/>
                                                                                 <connections>
                                                                                     <action selector="otherTransportServiceClick:" destination="NjE-1Z-12C" eventType="touchUpInside" id="zWP-2m-wUu"/>
@@ -2656,11 +2608,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="gZ9-m9-qsu"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2679,11 +2630,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="pDb-jj-h0q"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2702,11 +2652,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="3Fu-FG-QBn"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2736,7 +2685,7 @@
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uK-hE-Ho3">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uK-hE-Ho3">
                                                                                 <rect key="frame" x="0.0" y="8" width="277" height="44"/>
                                                                                 <connections>
                                                                                     <action selector="otherPaidEmploymentClick:" destination="NjE-1Z-12C" eventType="touchUpInside" id="PFZ-Yg-lnf"/>
@@ -2771,11 +2720,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="AOZ-9I-5Gx"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2794,11 +2742,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="EyJ-93-iGf"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2817,11 +2764,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="fHt-GF-iZi"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2851,7 +2797,7 @@
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCm-oB-8eP">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCm-oB-8eP">
                                                                                 <rect key="frame" x="11" y="8" width="277" height="44"/>
                                                                                 <connections>
                                                                                     <action selector="otherSelfEmploymentClick:" destination="NjE-1Z-12C" eventType="touchUpInside" id="xOG-6O-xLM"/>
@@ -2886,11 +2832,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="Hg9-y6-xOb"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2909,11 +2854,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="UTN-2E-lx1"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2932,11 +2876,10 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="shn-eR-hNW"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                                         <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                                                 <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
@@ -2966,7 +2909,7 @@
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzs-bU-EIp">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzs-bU-EIp">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                                                                 <connections>
                                                                                     <action selector="hailWorkClick:" destination="NjE-1Z-12C" eventType="touchUpInside" id="Mws-VY-pL9"/>
@@ -3012,7 +2955,7 @@
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6j-hh-Dns">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6j-hh-Dns">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                                                                 <connections>
                                                                                     <action selector="btnLogmateClick:" destination="NjE-1Z-12C" eventType="touchUpInside" id="lYj-Dt-wVG"/>
@@ -3058,7 +3001,7 @@
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnY-8B-r7c">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnY-8B-r7c">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                                                                 <connections>
                                                                                     <action selector="meterInYourVehicleClick:" destination="NjE-1Z-12C" eventType="touchUpInside" id="dtv-QY-e0K"/>
@@ -3104,7 +3047,7 @@
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h81-Xj-sEA">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h81-Xj-sEA">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                                                                 <connections>
                                                                                     <action selector="ezygoTaxiMeterClick:" destination="NjE-1Z-12C" eventType="touchUpInside" id="tw7-nc-TUq"/>
@@ -3235,7 +3178,7 @@
                                     <constraint firstAttribute="trailing" secondItem="OiT-LZ-0iy" secondAttribute="trailing" id="zei-hQ-dpb"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWz-0A-p41">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWz-0A-p41">
                                 <rect key="frame" x="20" y="1140" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.61469184030000001" green="0.56526692710000004" blue="0.47428385420000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -3247,6 +3190,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ssx-Cu-U0S"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wWz-0A-p41" firstAttribute="leading" secondItem="bni-7g-kOv" secondAttribute="leading" constant="20" id="1Oj-qZ-9Er"/>
@@ -3257,7 +3201,6 @@
                             <constraint firstAttribute="trailing" secondItem="wWz-0A-p41" secondAttribute="trailing" constant="20" id="c7F-O6-Phc"/>
                             <constraint firstItem="LQX-Cz-zJE" firstAttribute="top" secondItem="bni-7g-kOv" secondAttribute="top" id="iSJ-VN-W1A"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ssx-Cu-U0S"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1200"/>
@@ -3299,6 +3242,26 @@
             <point key="canvasLocation" x="460.86956521739131" y="497.28260869565219"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="2lT-g3-MkA">
+            <size key="intrinsicContentSize" width="26" height="26"/>
+        </designable>
+        <designable name="D6J-p2-YM4">
+            <size key="intrinsicContentSize" width="144" height="26"/>
+        </designable>
+        <designable name="WgE-qc-O0w">
+            <size key="intrinsicContentSize" width="146" height="26"/>
+        </designable>
+        <designable name="Y9l-yH-v08">
+            <size key="intrinsicContentSize" width="75" height="22"/>
+        </designable>
+        <designable name="tnl-UZ-Loc">
+            <size key="intrinsicContentSize" width="55" height="22"/>
+        </designable>
+        <designable name="vzP-nh-yx3">
+            <size key="intrinsicContentSize" width="26" height="26"/>
+        </designable>
+    </designables>
     <resources>
         <image name="NZ" width="40" height="30"/>
         <image name="arrowDown" width="15" height="15"/>

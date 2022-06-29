@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SideMenuController
+//import SideMenuController
 import SDWebImage
 
 

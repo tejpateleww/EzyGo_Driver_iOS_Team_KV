@@ -10,7 +10,7 @@ import UIKit
 import NVActivityIndicatorView
 import SocketIO
 import Alamofire
-
+import SDWebImage
 
 typealias CompletionHandler = (_ success:Bool) -> Void
 
@@ -82,11 +82,11 @@ class UtilityClass: NSObject {
                                          style: .cancel, handler: nil)
         
         alert.addAction(cancelAction)
-        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
-        alertWindow.rootViewController = UIViewController()
-        alertWindow.windowLevel = UIWindowLevelAlert + 1
-        alertWindow.makeKeyAndVisible()
-        alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+//        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+//        alertWindow.rootViewController = UIViewController()
+//        alertWindow.windowLevel = UIWindowLevelAlert + 1
+//        alertWindow.makeKeyAndVisible()
+        vc.present(alert, animated: true, completion: nil)
     }
     
     class func showAlertWithCompletion(_ title: String, message: String, vc: UIViewController,completionHandler: @escaping CompletionHandler) -> Void

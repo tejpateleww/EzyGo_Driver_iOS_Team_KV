@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class SideMenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 {

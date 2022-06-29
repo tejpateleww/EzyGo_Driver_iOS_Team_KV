@@ -68,7 +68,7 @@ public extension UIWindow {
     ///
     /// - Parameter save: Set to true to save, otherwise false.
     /// - Returns: Returns the screenshot as an UIImage.
-    public func windowScreenshot(save: Bool = false) -> UIImage? {
+     public func windowScreenshot(save: Bool = false) -> UIImage? {
         guard let orientation: UIInterfaceOrientation = (UIApplication.value(forKey: "sharedApplication") as? UIApplication)?.statusBarOrientation else {
             return nil
         }
@@ -206,6 +206,8 @@ public extension UIWindow {
                         }
                     })
                 }
+            default:
+                break
             }
         }
     }
