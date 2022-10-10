@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,23 +24,23 @@
                     <rect key="frame" x="0.0" y="0.0" width="369" height="84"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oom-Cw-b6m">
-                            <rect key="frame" x="0.0" y="0.0" width="369" height="64"/>
+                            <rect key="frame" x="0.0" y="0.0" width="369" height="55"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="251" image="iconLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="nRD-B0-mZn">
-                                    <rect key="frame" x="119.5" y="28" width="130" height="26"/>
+                                    <rect key="frame" x="119.5" y="19" width="130" height="26"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="130" id="C65-gk-qG4"/>
                                         <constraint firstAttribute="height" constant="26" id="org-qc-JeO"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrR-3L-xJP">
-                                    <rect key="frame" x="184.5" y="41" width="0.0" height="0.0"/>
+                                    <rect key="frame" x="184.5" y="32" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1E-eJ-hFL">
-                                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="64" height="55"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" image="iconMenu"/>
@@ -51,7 +49,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1T-z4-IAj">
-                                    <rect key="frame" x="0.0" y="24" width="64" height="40"/>
+                                    <rect key="frame" x="0.0" y="15" width="64" height="40"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="64" id="36r-Aj-hmV"/>
@@ -64,7 +62,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QR-5T-1ST">
-                                    <rect key="frame" x="289" y="1" width="80" height="62"/>
+                                    <rect key="frame" x="289" y="1" width="80" height="53"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="zHo-UE-trT"/>
                                     </constraints>
@@ -75,7 +73,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIE-fB-cMg">
-                                    <rect key="frame" x="274" y="1" width="80" height="80"/>
+                                    <rect key="frame" x="274" y="-8" width="80" height="80"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="RIE-fB-cMg" secondAttribute="height" multiplier="1:1" id="JxY-iw-sPu"/>
                                     </constraints>
@@ -86,7 +84,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a55-1B-6uK">
-                                    <rect key="frame" x="289" y="1" width="80" height="80"/>
+                                    <rect key="frame" x="289" y="-8" width="80" height="80"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="Yxf-bi-C6J"/>
                                     </constraints>
@@ -95,8 +93,8 @@
                                         <action selector="btnCallHelpDesk:" destination="rkH-kk-dTZ" eventType="touchUpInside" id="kxm-mU-3iu"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LR-Zj-Ohg">
-                                    <rect key="frame" x="286" y="26" width="73" height="30"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LR-Zj-Ohg">
+                                    <rect key="frame" x="286" y="17" width="73" height="30"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                     <state key="normal" title="SIGN OUT">
                                         <color key="titleColor" red="1" green="0.63921568630000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,13 +104,13 @@
                                     </connections>
                                 </button>
                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Desk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeD-St-Jlj">
-                                    <rect key="frame" x="52.5" y="47" width="49.5" height="12"/>
+                                    <rect key="frame" x="52.5" y="38" width="49.5" height="12"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                     <color key="textColor" red="0.92549019610000005" green="0.4941176471" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asu-MR-APp">
-                                    <rect key="frame" x="66" y="24.5" width="22" height="22"/>
+                                    <rect key="frame" x="66" y="15.5" width="22" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="asu-MR-APp" secondAttribute="height" multiplier="1:1" id="gwQ-sQ-3tm"/>
                                     </constraints>
@@ -155,10 +153,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qig-aM-aPK">
-                            <rect key="frame" x="0.0" y="64" width="369" height="20"/>
+                            <rect key="frame" x="0.0" y="55" width="369" height="29"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJI-dO-7NF">
-                                    <rect key="frame" x="152.5" y="-4.5" width="64" height="29"/>
+                                    <rect key="frame" x="153" y="0.0" width="63.5" height="29"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="iJI-dO-7NF" secondAttribute="height" multiplier="11:5" id="U09-Cs-qz3"/>
                                     </constraints>
@@ -167,12 +165,12 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
+                            <viewLayoutGuide key="safeArea" id="Na1-Qm-sc7"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="iJI-dO-7NF" firstAttribute="centerY" secondItem="qig-aM-aPK" secondAttribute="centerY" id="30J-L4-wTk"/>
                                 <constraint firstItem="iJI-dO-7NF" firstAttribute="centerX" secondItem="qig-aM-aPK" secondAttribute="centerX" id="f9O-Ae-mdC"/>
                             </constraints>
-                            <viewLayoutGuide key="safeArea" id="Na1-Qm-sc7"/>
                         </view>
                     </subviews>
                     <constraints>
@@ -182,6 +180,7 @@
                     </constraints>
                 </stackView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="PWX-Ie-XfJ"/>
             <color key="backgroundColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="dfC-RT-f77" firstAttribute="trailing" secondItem="PWX-Ie-XfJ" secondAttribute="trailing" id="2zZ-sB-ENh"/>
@@ -193,7 +192,6 @@
                 <constraint firstItem="PWX-Ie-XfJ" firstAttribute="bottom" secondItem="dfC-RT-f77" secondAttribute="bottom" id="sD0-1v-CFd"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="PWX-Ie-XfJ"/>
             <connections>
                 <outlet property="bottomView" destination="qig-aM-aPK" id="5Bq-3L-eiq"/>
                 <outlet property="btnBack" destination="n1T-z4-IAj" id="aJG-k5-IX8"/>
@@ -213,7 +211,7 @@
     <resources>
         <image name="iconBack" width="16" height="16"/>
         <image name="iconCall" width="16" height="16"/>
-        <image name="iconHome" width="39.75" height="39.75"/>
+        <image name="iconHome" width="26.5" height="26.5"/>
         <image name="iconLogoWhite" width="274" height="68"/>
         <image name="iconMenu" width="32" height="32"/>
         <image name="iconOnSwitch" width="50" height="22"/>

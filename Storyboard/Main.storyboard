@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XDP-HY-PQX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XDP-HY-PQX">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -7325,12 +7325,9 @@ JAMwLjAwA
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-0w-Lvw">
                                                     <rect key="frame" x="5" y="645" width="315" height="50"/>
                                                     <subviews>
-                                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE8-8O-cK0">
-                                                            <rect key="frame" x="20" y="0.0" width="275" height="0.0"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE8-8O-cK0">
+                                                            <rect key="frame" x="20" y="0.0" width="275" height="50"/>
                                                             <color key="backgroundColor" red="0.92549019610000005" green="0.4941176471" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" id="Mcf-8E-3mx"/>
-                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                             <state key="normal" title="Accept Request">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -7341,6 +7338,7 @@ JAMwLjAwA
                                                         <constraint firstItem="xE8-8O-cK0" firstAttribute="leading" secondItem="fDK-0w-Lvw" secondAttribute="leading" constant="20" id="8a3-Iu-vMT"/>
                                                         <constraint firstItem="xE8-8O-cK0" firstAttribute="top" secondItem="fDK-0w-Lvw" secondAttribute="top" id="AA8-nY-W4t"/>
                                                         <constraint firstAttribute="trailing" secondItem="xE8-8O-cK0" secondAttribute="trailing" constant="20" id="ZB1-ZS-cNt"/>
+                                                        <constraint firstAttribute="bottom" secondItem="xE8-8O-cK0" secondAttribute="bottom" id="bnd-gb-Gqp"/>
                                                         <constraint firstAttribute="height" constant="50" id="xvX-BD-J6A"/>
                                                     </constraints>
                                                 </view>
@@ -12719,6 +12717,7 @@ JAMwLjAwA
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="5cZ-a6-qEm"/>
                                                                 </constraints>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
@@ -18602,6 +18601,12 @@ JAMwLjAwA
         </scene>
     </scenes>
     <designables>
+        <designable name="0HA-fc-btS">
+            <size key="intrinsicContentSize" width="220" height="44"/>
+        </designable>
+        <designable name="1l7-m2-Wyj">
+            <size key="intrinsicContentSize" width="224" height="44"/>
+        </designable>
         <designable name="2HE-pC-gGb">
             <size key="intrinsicContentSize" width="1230" height="17"/>
         </designable>
@@ -18615,7 +18620,7 @@ JAMwLjAwA
             <size key="intrinsicContentSize" width="61" height="18.5"/>
         </designable>
         <designable name="5UW-pW-iy4">
-            <size key="intrinsicContentSize" width="109" height="17"/>
+            <size key="intrinsicContentSize" width="119" height="17"/>
         </designable>
         <designable name="68P-Yj-2yW">
             <size key="intrinsicContentSize" width="67.5" height="18.5"/>
@@ -18631,6 +18636,9 @@ JAMwLjAwA
         </designable>
         <designable name="GzP-aS-t6N">
             <size key="intrinsicContentSize" width="168.5" height="18.5"/>
+        </designable>
+        <designable name="I9Y-Nq-dnp">
+            <size key="intrinsicContentSize" width="240" height="44"/>
         </designable>
         <designable name="Kq8-YD-W6e">
             <size key="intrinsicContentSize" width="110" height="18.5"/>
@@ -18686,6 +18694,9 @@ JAMwLjAwA
         <designable name="fFu-EQ-TkS">
             <size key="intrinsicContentSize" width="147.5" height="18.5"/>
         </designable>
+        <designable name="gIl-3z-Kc9">
+            <size key="intrinsicContentSize" width="224" height="44"/>
+        </designable>
         <designable name="ge5-8g-hNf">
             <size key="intrinsicContentSize" width="139.5" height="18.5"/>
         </designable>
@@ -18695,7 +18706,12 @@ JAMwLjAwA
         <designable name="kmP-ML-ZLK">
             <size key="intrinsicContentSize" width="98" height="18.5"/>
         </designable>
-        <designable name="moo-6f-F8b"/>
+        <designable name="lYF-4G-HwN">
+            <size key="intrinsicContentSize" width="224" height="44"/>
+        </designable>
+        <designable name="moo-6f-F8b">
+            <size key="intrinsicContentSize" width="10" height="0.0"/>
+        </designable>
         <designable name="noR-Fz-dgE">
             <size key="intrinsicContentSize" width="26" height="18.5"/>
         </designable>

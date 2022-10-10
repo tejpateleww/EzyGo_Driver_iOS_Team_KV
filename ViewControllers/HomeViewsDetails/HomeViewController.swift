@@ -1299,12 +1299,16 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
 //                self.dismiss(animated: true, completion: nil)
 //            }
             //vc will be the view controller on which you will present your alert as you cannot use self because this method is static.
-            let alertWindow = UIWindow(frame: UIScreen.main.bounds)
-            alertWindow.rootViewController = UIViewController()
-            alertWindow.windowLevel = UIWindowLevelAlert + 1
-            alertWindow.makeKeyAndVisible()
-            alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+            
+            // Changes in alert due to automtically dismiss
+//            let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+//            alertWindow.rootViewController = UIViewController()
+//            alertWindow.windowLevel = UIWindowLevelAlert + 1
+//            alertWindow.makeKeyAndVisible()
+//            alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
 //            self.present(alert, animated: true, completion: nil)
+            
+            (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController?.present(alert, animated: true, completion: nil)
             
         })
         
@@ -2854,7 +2858,7 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
         
     }
     
-    //MARK:- Local Notification
+    //MARK: - Local Notification
     
     func addLocalNotification()
     {
@@ -2900,7 +2904,7 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
     }
     
     
-    //MARK:- Play Audio
+    //MARK: - Play Audio
     var audioPlayer:AVAudioPlayer!
     
     func playSound(strName : String) {
@@ -4794,13 +4798,15 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
                         self.callCashApi(false)
                         
                     }))
-                    //vc will be the view controller on which you will present your alert as you cannot use self because this method is static.
-                    let alertWindow = UIWindow(frame: UIScreen.main.bounds)
-                    alertWindow.rootViewController = UIViewController()
-                    alertWindow.windowLevel = UIWindowLevelAlert + 1
-                    alertWindow.makeKeyAndVisible()
-                    alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+                    //  Alert View is dismiss automatically so Code change
                     
+                    //vc will be the view controller on which you will present your alert as you cannot use self because this method is static.
+//                    let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+//                    alertWindow.rootViewController = UIViewController()
+//                    alertWindow.windowLevel = UIWindowLevelAlert + 1
+//                    alertWindow.makeKeyAndVisible()
+//                    alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+                    (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController?.present(alert, animated: true, completion: nil)
                     
                     /*
                     //My change
@@ -5159,11 +5165,15 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
                         self.callCashApiForAdvanceBooking(false)
                     }))
                     //vc will be the view controller on which you will present your alert as you cannot use self because this method is static.
-                    let alertWindow = UIWindow(frame: UIScreen.main.bounds)
-                    alertWindow.rootViewController = UIViewController()
-                    alertWindow.windowLevel = UIWindowLevelAlert + 1
-                    alertWindow.makeKeyAndVisible()
-                    alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+//                    let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+//                    alertWindow.rootViewController = UIViewController()
+//                    alertWindow.windowLevel = UIWindowLevelAlert + 1
+//                    alertWindow.makeKeyAndVisible()
+//                    alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+//
+                    // Changes for Alert  by Uttam Bhoj
+                    (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController?.present(alert, animated: true, completion: nil)
+                    
                     
                     //                    self.callCashJobApi()
                     

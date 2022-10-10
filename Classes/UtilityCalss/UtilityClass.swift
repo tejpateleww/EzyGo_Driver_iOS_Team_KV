@@ -101,11 +101,14 @@ class UtilityClass: NSObject {
             completionHandler(true)
         }))
         //vc will be the view controller on which you will present your alert as you cannot use self because this method is static.
-        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
-        alertWindow.rootViewController = UIViewController()
-        alertWindow.windowLevel = UIWindowLevelAlert + 1
-        alertWindow.makeKeyAndVisible()
-        alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+//        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+//        alertWindow.rootViewController = UIViewController()
+//        alertWindow.windowLevel = UIWindowLevelAlert + 1
+//        alertWindow.makeKeyAndVisible()
+//        alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
+//        
+        // New Changes
+        (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController?.present(alert, animated: true, completion: nil)
         
     }
     //Paid Alert

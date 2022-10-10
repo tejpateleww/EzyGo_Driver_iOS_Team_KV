@@ -202,9 +202,9 @@ class FutureBookingViewController: UIViewController, UITableViewDataSource, UITa
         }
         */
         cell.btnAction.tag = Int((data.object(forKey: "Id") as? String)!)!
-        
+        // Changes  Accepte Future booking button show
         cell.btnAction.accessibilityValue = ("\(indexPath.row)")
-        cell.btnAction.isHidden = true
+      //  cell.btnAction.isHidden = true
         cell.btnAction.addTarget(self, action: #selector(self.btnActionForSelectRecord(sender:)), for: .touchUpInside)
         
         if let strUrl = data["MapUrl"] as? String {
