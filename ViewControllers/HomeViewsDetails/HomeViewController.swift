@@ -226,7 +226,7 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
                 if manager.location != nil
                 {
                     manager.startUpdatingLocation()
-                    manager.desiredAccuracy = kCLLocationAccuracyBest
+                    manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
                     manager.activityType = .automotiveNavigation
                     manager.startMonitoringSignificantLocationChanges()
                     manager.allowsBackgroundLocationUpdates = true
@@ -1209,7 +1209,7 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
         let myJSON = [profileKeys.kDriverId : driverID, socketApiKeys.kLat: defaultLocation.coordinate.latitude, socketApiKeys.kLong: defaultLocation.coordinate.longitude, "Token": Singletons.sharedInstance.deviceToken, "Version": version] as [String : Any]
         
         socket?.emit(socketApiKeys.kUpdateDriverLocation, with: [myJSON])
-//                print ("UpdateDriverLocation : \(myJSON)")
+        print ("UpdateDriverLocation : \(myJSON)")
         
         if Singletons.sharedInstance.isPickUPPasenger != nil {
             if !(Singletons.sharedInstance.isPickUPPasenger) {
@@ -5907,3 +5907,13 @@ extension Bool {
     }
 }
 
+
+//extension HomeViewController: CLLocationManagerDelegate {
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//
+//        let location: CLLocation = locations.last!
+//        defaultLocation = location
+//        Singletons.sharedInstance.latitude = location.coordinate.latitude
+//        Singletons.sharedInstance.longitude = location.coordinate.longitude
+//    }
+//}
