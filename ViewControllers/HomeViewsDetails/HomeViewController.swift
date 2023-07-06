@@ -3166,10 +3166,14 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
             }
             dictOFParam["DropoffLocation"] = self.strCompleteTripLocation as AnyObject
         
-            if strSoilDamageCharge != "" {
-                dictOFParam["SoilDamageCharge"] = strSoilDamageCharge as AnyObject
-            }
+//            if strSoilDamageCharge != "" {
+//                dictOFParam["SoilDamageCharge"] = strSoilDamageCharge as AnyObject
+//            }
         
+        if strSoilDamageCharge != "" {
+            dictOFParam["SoilDamageChargeNote"] = strSoilDamageCharge as AnyObject
+        }
+       // dictOFParam["SoilDamageChargeNote"] = strSoilDamageCharge as AnyObject
             if isAdvanceBooking {
                 
                 if bookingID != "" {

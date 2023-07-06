@@ -263,11 +263,16 @@ class TripInfoCompletedTripVC: UIViewController {
 //            lblAirportDropOf.text = strNotAvailable
 //        }
         
-        lblSoilingDamage.text = currency + String(format: "%.2f",Double(checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "SoilDamageCharge", isNotHave: strNoAmount)) ?? 0.0)
-        if strLblSoilingDamage == strNoAmount {
-            lblSoilingDamage.text = strNoAmount
-        }
+//        lblSoilingDamage.text = currency + String(format: "%.2f",Double(checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "SoilDamageCharge", isNotHave: strNoAmount)) ?? 0.0)
+//        if strLblSoilingDamage == strNoAmount {
+//            lblSoilingDamage.text = strNoAmount
+//        }
         
+//        lblSoilingDamage.text = String(format: "%.2f",Double(checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "SoilDamageChargeNote", isNotHave: strNoAmount)) ?? 0.0)
+//        if strLblSoilingDamage == strNoAmount {
+//            lblSoilingDamage.text = strNoAmount
+//        }
+               lblSoilingDamage.text = dictData.object(forKey: "SoilDamageChargeNote") as? String
         lblCancellationCharge.text = currency + checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "CancellationFee", isNotHave: "0")
         
         
@@ -277,7 +282,7 @@ class TripInfoCompletedTripVC: UIViewController {
         //Change Hide fields
         let strAirportPickupEmpty = checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "AirportPickUpCharge", isNotHave: "")
         let strAirportDropupEmpty = checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "AirportDropOffCharge", isNotHave: "")
-        let strSoilDamageEmpty = checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "SoilDamageCharge", isNotHave: "")
+        let strSoilDamageEmpty = checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "SoilDamageChargeNote", isNotHave: "")
         let strCancelationEmpty = checkDictionaryHaveValue(dictData: dictData as! [String : AnyObject], didHaveValue: "CancellationFee", isNotHave: "")
         
         if (strAirportPickupEmpty.isEmptyOrWhitespace() || strAirportPickupEmpty == "0" || strAirportPickupEmpty == "0.0") {

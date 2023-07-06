@@ -45,11 +45,14 @@ class DamageChargeViewController: UIViewController {
     @IBAction func btnSubmitActionHandler(_ sender: UIButton) {
         let convertStringTOInt = (txtDamageCharges.text ?? "").toInt()
         if btnAddDamages.isSelected && txtDamageCharges.text!.isEmptyOrWhitespace()  {
-            Utilities.showAlert("", message: "Please enter damage charge", vc: self)
+            Utilities.showAlert("", message: "Please Enter damage charge note", vc: self)
 
-        } else if convertStringTOInt ?? 0 > 150 {
-             Utilities.showAlert("", message: "You can not add damage charge more than $150", vc: self)
-        } else {
+        }
+        
+//        else if convertStringTOInt ?? 0 > 150 {
+//             Utilities.showAlert("", message: "You can not add damage charge more than $150", vc: self)
+//        }
+        else {
             delegate?.didEnterDamageCharge!(cost: txtDamageCharges.text ?? "")
             
             self.dismiss(animated: true, completion: nil)

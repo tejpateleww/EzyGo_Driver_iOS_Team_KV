@@ -295,7 +295,8 @@ class TripInvoiceViewController: UIViewController, UITableViewDataSource, UITabl
         
         cell.lblAirportDropOf.text = currency + String(format: "%.2f",Double(checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "AirportDropOffCharge", isNotHave: "0.0")) ?? 0.0)
         
-        cell.lblSoilingDamage.text = currency + checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "SoilDamageCharge", isNotHave: strNoAmount)
+        cell.lblSoilingDamage.text =  data.object(forKey: "SoilDamageChargeNote") as? String
+        //checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "SoilDamageCharge", isNotHave: strNoAmount)
         
         
         
@@ -342,13 +343,13 @@ class TripInvoiceViewController: UIViewController, UITableViewDataSource, UITabl
 //            cell.stackVwAirportDropoff.isHidden = false
 //        }
         
-        if (strSoilDamageEmpty.isEmptyOrWhitespace() || strSoilDamageEmpty == "0") {
+        if (strSoilDamageEmpty.isEmptyOrWhitespace() || strSoilDamageEmpty == "") {
             cell.stackVwSoilingDamage.isHidden = true
         }else {
             cell.stackVwSoilingDamage.isHidden = false
         }
         
-        if (strAirportPickupEmpty.isEmptyOrWhitespace() || strAirportPickupEmpty == "0") && (strAirportDropupEmpty.isEmptyOrWhitespace() || strAirportDropupEmpty == "0")  && (strSoilDamageEmpty.isEmptyOrWhitespace() || strSoilDamageEmpty == "0"){
+        if (strAirportPickupEmpty.isEmptyOrWhitespace() || strAirportPickupEmpty == "0") && (strAirportDropupEmpty.isEmptyOrWhitespace() || strAirportDropupEmpty == "0")  && (strSoilDamageEmpty.isEmptyOrWhitespace() || strSoilDamageEmpty == ""){
             cell.stackVwPlusExtraCharge.isHidden = true
         }else {
             cell.stackVwPlusExtraCharge.isHidden = false

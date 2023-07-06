@@ -393,18 +393,18 @@ class PastJobsViewController: UIViewController, UITableViewDataSource, UITableVi
             
             cell.lblAirportDropOf.text = currency + String(format: "%.2f",Double(checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "AirportDropOffCharge", isNotHave: "0.0")) ?? 0.0)
 
-            cell.lblSoilingDamage.text = currency + checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "SoilDamageCharge", isNotHave: strNoAmount)
+//            cell.lblSoilingDamage.text = currency + checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "SoilDamageCharge", isNotHave: strNoAmount)
             
             //        if lblSoilingDamage == strNoAmount {
             //            cell.lblSoilingDamage.text = strNoAmount
             //        }
             
             
-            
+            cell.lblSoilingDamage.text =  data.object(forKey: "SoilDamageChargeNote") as? String //dictData.object(forKey: "SoilDamageChargeNote") as? String
             
             let strAirportPickupEmpty = checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "AirportPickUpCharge", isNotHave: "")
             let strAirportDropupEmpty = checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "AirportDropOffCharge", isNotHave: "")
-            let strSoilDamageEmpty = checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "SoilDamageCharge", isNotHave: "")
+            let strSoilDamageEmpty = checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "SoilDamageChargeNote", isNotHave: "")
             let strCancelationEmpty = checkDictionaryHaveValue(dictData: data as! [String : AnyObject], didHaveValue: "CancellationFee", isNotHave: "")
             
             if (strAirportPickupEmpty.isEmptyOrWhitespace() || strAirportPickupEmpty == "0" || strAirportPickupEmpty == "0.0" ) {

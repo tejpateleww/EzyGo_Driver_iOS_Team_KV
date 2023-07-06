@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XDP-HY-PQX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XDP-HY-PQX">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -491,7 +491,7 @@
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuViewCell" id="MfN-nb-6Rs" userLabel="SideMenuViewCell" customClass="SideMenuViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="320" height="44"/>
+                                                <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MfN-nb-6Rs" id="Dok-8J-EkW">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -538,7 +538,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuViewCell1" rowHeight="158" id="9sk-r4-M40" userLabel="SideMenuViewCell" customClass="SideMenuViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="88.5" width="320" height="158"/>
+                                                <rect key="frame" x="0.0" y="94" width="320" height="158"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9sk-r4-M40" id="QjO-g3-Kyi">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
@@ -665,7 +665,7 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsListViewCell" id="PKV-IJ-u8Y" customClass="SettingsListViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="24.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="24.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PKV-IJ-u8Y" id="LFw-oC-ssO">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="24.5"/>
@@ -2726,7 +2726,7 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyRatingTableViewCell" rowHeight="231" id="Fo1-VF-4Yh" customClass="MyRatingTableViewCell" customModule="ezygo_Driver">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="231"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="231"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fo1-VF-4Yh" id="UGZ-Es-DdZ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
@@ -2967,7 +2967,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyFeedbackViewCell" rowHeight="412" id="KEk-r0-2MF" userLabel="MyFeedbackViewCell" customClass="MyFeedbackViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="275.5" width="320" height="412"/>
+                                        <rect key="frame" x="0.0" y="281" width="320" height="412"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KEk-r0-2MF" id="1yl-dd-zlo">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="412"/>
@@ -5309,7 +5309,7 @@
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoDataFound" id="B2V-qb-VQ4" customClass="PastJobsListTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B2V-qb-VQ4" id="D4U-dW-zG6">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -5330,7 +5330,7 @@
                                         <color key="backgroundColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PastJobsListViewCell" rowHeight="879" id="pM5-s8-vNK" userLabel="PastJobsListViewCell" customClass="PastJobsListViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88.5" width="320" height="879"/>
+                                        <rect key="frame" x="0.0" y="94" width="320" height="879"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pM5-s8-vNK" id="YOr-do-kSB">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="879"/>
@@ -5700,7 +5700,7 @@ JAMwLjAwA
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dea-Pk-qau">
                                                                                     <rect key="frame" x="0.0" y="199.5" width="273" height="11"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soiling/Damage :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUX-TM-9Yl">
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soiling/Damage note :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUX-TM-9Yl">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="136.5" height="11"/>
                                                                                             <color key="backgroundColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -6060,7 +6060,7 @@ JAMwLjAwA
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingJobsListViewCell" rowHeight="800" id="Bqs-Lp-9OH" userLabel="PastJobsListViewCell" customClass="PendingJobsListViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="800"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="800"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bqs-Lp-9OH" id="mMU-1L-dZD">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
@@ -6691,7 +6691,7 @@ JAMwLjAwA
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoDataFound" id="rno-lU-oin" customClass="PendingJobsListTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="844.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="850" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rno-lU-oin" id="v43-I5-A6h">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -6755,7 +6755,7 @@ JAMwLjAwA
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FutureBookingViewCell" rowHeight="700" id="yVN-Cr-iyW" userLabel="PastJobsListViewCell" customClass="FutureBookingViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="700"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="700"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yVN-Cr-iyW" id="TAo-eJ-h9E">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
@@ -7383,7 +7383,7 @@ JAMwLjAwA
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoDataFound" id="fBD-Ct-Hcj" customClass="FutureBookingTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="744.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="750" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fBD-Ct-Hcj" id="B1c-li-X7h">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -7560,7 +7560,7 @@ JAMwLjAwA
                                         <rect key="frame" x="104" y="219" width="92" height="60"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qgl-qz-Vb6">
-                                                <rect key="frame" x="22" y="21" width="60" height="18.5"/>
+                                                <rect key="frame" x="22" y="20.5" width="60" height="19"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" priority="720" constant="60" id="Thy-8v-4ZA"/>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="nKD-OH-7fc"/>
@@ -8001,7 +8001,7 @@ JAMwLjAwA
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletCardsTableViewCell1" rowHeight="160" id="vb5-7o-aK6" customClass="WalletCardsTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="160"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vb5-7o-aK6" id="7Bm-XO-BHo">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
@@ -8120,7 +8120,7 @@ JAMwLjAwA
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletCardsTableViewCell" rowHeight="160" id="b18-GV-Ts6" customClass="WalletCardsTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="204.5" width="320" height="160"/>
+                                        <rect key="frame" x="0.0" y="210" width="320" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b18-GV-Ts6" id="j3v-Yy-aVD">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
@@ -8213,7 +8213,7 @@ JAMwLjAwA
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddCard" rowHeight="55" id="3Tu-AC-PqD" customClass="WalletCardsTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="364.5" width="320" height="55"/>
+                                        <rect key="frame" x="0.0" y="370" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Tu-AC-PqD" id="Eac-hv-KnO">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
@@ -8354,7 +8354,7 @@ JAMwLjAwA
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRF-J9-7Yu">
-                            <rect key="frame" x="130.5" y="31" width="59" height="21"/>
+                            <rect key="frame" x="130.66666666666666" y="31" width="59" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" red="1" green="0.63921568630000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -8383,7 +8383,7 @@ JAMwLjAwA
                             <rect key="frame" x="59" y="24" width="22" height="35"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Desk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n5-Vu-uJl">
-                                    <rect key="frame" x="-13.5" y="23" width="49" height="12"/>
+                                    <rect key="frame" x="-13.333333333333336" y="23" width="49" height="12"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                     <color key="textColor" red="0.9519875646" green="0.63859170679999999" blue="0.09045866877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -8457,7 +8457,7 @@ JAMwLjAwA
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletHistoryTableViewCell1" rowHeight="90" id="OFj-Iy-qro" userLabel="WalletBalanceMainTableViewCell" customClass="WalletHistoryTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="300" height="90"/>
+                                        <rect key="frame" x="0.0" y="50" width="300" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OFj-Iy-qro" id="Jfj-4a-LKK">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="90"/>
@@ -8545,7 +8545,7 @@ JAMwLjAwA
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletHistoryTableViewCell2" rowHeight="82" id="gKR-P2-1tX" userLabel="WalletHistoryTableViewCell" customClass="WalletHistoryTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="134.5" width="300" height="82"/>
+                                        <rect key="frame" x="0.0" y="140" width="300" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gKR-P2-1tX" id="n1J-mu-UPk">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="82"/>
@@ -8603,7 +8603,7 @@ JAMwLjAwA
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletHistoryTableViewCell" rowHeight="108" id="Viu-Dd-XyE" userLabel="WalletBalanceMainTableViewCell" customClass="WalletHistoryTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="216.5" width="300" height="108"/>
+                                        <rect key="frame" x="0.0" y="222" width="300" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Viu-Dd-XyE" id="fZP-N5-9lo">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="108"/>
@@ -8925,7 +8925,7 @@ JAMwLjAwA
                                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletBalanceMainTableViewCell" rowHeight="108" id="wUM-VY-fkI" userLabel="WalletBalanceMainTableViewCell" customClass="WalletBalanceMainTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="44.5" width="300" height="108"/>
+                                                                <rect key="frame" x="0.0" y="50" width="300" height="108"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wUM-VY-fkI" id="qdi-qb-iSr">
                                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="108"/>
@@ -10983,7 +10983,7 @@ JAMwLjAwA
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Iau-lY-HRz">
                                                                                 <rect key="frame" x="0.0" y="203.5" width="243" height="13.5"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soiling/Damage :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXG-Aj-pdr">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soiling/Damage note :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXG-Aj-pdr">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="121.5" height="13.5"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                                         <nil key="textColor"/>
@@ -10999,6 +10999,10 @@ JAMwLjAwA
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                 </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="13.5" id="6w7-L9-ApJ"/>
+                                                                                </constraints>
                                                                             </stackView>
                                                                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-hq-LuJ">
                                                                                 <rect key="frame" x="0.0" y="219.5" width="243" height="0.0"/>
@@ -11865,7 +11869,7 @@ JAMwLjAwA
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuIDriverProfile" rowHeight="180" id="zVZ-w6-dRB" customClass="SideMenuTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="180"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zVZ-w6-dRB" id="ayt-0b-fW5">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
@@ -11925,7 +11929,7 @@ JAMwLjAwA
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuItemsList" rowHeight="44" id="DmS-El-dXV" customClass="SideMenuTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="224.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="230" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DmS-El-dXV" id="8MC-8Y-R8W">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -12018,7 +12022,7 @@ JAMwLjAwA
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="j11-Sa-RgD">
-                                            <rect key="frame" x="0.0" y="269" width="320" height="88"/>
+                                            <rect key="frame" x="0.0" y="280" width="320" height="88"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAV-7r-eOQ">
@@ -12045,7 +12049,7 @@ JAMwLjAwA
                                         </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuViewCell" id="Kx0-HZ-oHu" userLabel="SideMenuViewCell" customClass="SideMenuViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="320" height="44"/>
+                                                <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kx0-HZ-oHu" id="q3w-TB-g1j">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -12092,7 +12096,7 @@ JAMwLjAwA
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuViewCell1" rowHeight="158" id="phS-8Z-zEu" userLabel="SideMenuViewCell" customClass="SideMenuViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="88.5" width="320" height="158"/>
+                                                <rect key="frame" x="0.0" y="94" width="320" height="158"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="phS-8Z-zEu" id="zl8-Ds-3p3">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
@@ -12680,7 +12684,7 @@ JAMwLjAwA
                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                 <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                                <state key="normal" title="Add damage charge?" image="checkBoxBlackUn">
+                                                                <state key="normal" title="Add damage charge note" image="checkBoxBlackUn">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <state key="selected" image="iconCheckBoxSelect"/>
@@ -12712,14 +12716,14 @@ JAMwLjAwA
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jF7-Zn-zAp">
                                                         <rect key="frame" x="12" y="140.5" width="256" height="41"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Damage Charge" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6kd-Mb-fe6">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Soiling/Damage note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6kd-Mb-fe6">
                                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="5cZ-a6-qEm"/>
                                                                 </constraints>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNu-oK-3Id">
                                                                 <rect key="frame" x="0.0" y="40" width="256" height="1"/>
@@ -13786,14 +13790,14 @@ JAMwLjAwA
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tiz-dl-Vf2">
                                                                                 <rect key="frame" x="0.0" y="355" width="243" height="24.5"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soiling/Damage :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-lG-cLq">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soiling/Damage note :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-lG-cLq">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="121.5" height="24.5"/>
                                                                                         <color key="backgroundColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLV-As-qTX">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLV-As-qTX">
                                                                                         <rect key="frame" x="121.5" y="0.0" width="121.5" height="24.5"/>
                                                                                         <string key="text" base64-UTF8="YES">
 JAMwLjAwA
@@ -14168,7 +14172,7 @@ JAMwLjAwA
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoDataFound" id="0oJ-3p-j3Y" customClass="PastJobsListTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0oJ-3p-j3Y" id="tVn-e5-ND9">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -14189,7 +14193,7 @@ JAMwLjAwA
                                         <color key="backgroundColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripInoviceCell" rowHeight="950" id="174-Jn-MgS" userLabel="PastJobsListViewCell" customClass="PastJobsListViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88.5" width="320" height="950"/>
+                                        <rect key="frame" x="0.0" y="94" width="320" height="950"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="174-Jn-MgS" id="dQU-Md-g4G">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="950"/>
@@ -14570,7 +14574,7 @@ JAMwLjAwA
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mGW-k7-Nv2">
                                                                                     <rect key="frame" x="0.0" y="203.5" width="273" height="13.5"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soiling/Damage :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCc-f2-ttf">
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soiling/Damage note :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCc-f2-ttf">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="136.5" height="13.5"/>
                                                                                             <color key="backgroundColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -15828,7 +15832,7 @@ JAMwLjAwA
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoDataFound" id="3Qc-ti-hce" customClass="PastJobsListTableViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Qc-ti-hce" id="p3G-NY-66X">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -15849,7 +15853,7 @@ JAMwLjAwA
                                         <color key="backgroundColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PastJobsListViewCell" rowHeight="350" id="pcH-tO-p70" userLabel="PastJobsListViewCell" customClass="PastJobsListViewCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="88.5" width="320" height="350"/>
+                                        <rect key="frame" x="0.0" y="94" width="320" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pcH-tO-p70" id="IGM-vt-pyc">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
@@ -16420,7 +16424,7 @@ JAMwLjAwA
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogRecordCell" rowHeight="135" id="F2j-8g-i7e" userLabel="PastJobsListViewCell" customClass="LogRecordCell" customModule="ezygo_Driver" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="438.5" width="320" height="135"/>
+                                        <rect key="frame" x="0.0" y="444" width="320" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F2j-8g-i7e" id="STB-y5-TWS">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
@@ -16459,16 +16463,16 @@ JAMwLjAwA
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-JP-SH9">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-JP-SH9">
                                                             <rect key="frame" x="15" y="66" width="280" height="14.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shift End:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeJ-qs-sbO">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Shift End:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeJ-qs-sbO">
                                                                     <rect key="frame" x="0.0" y="0.0" width="137.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 28-12-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWW-sT-yLv">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: 28-12-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWW-sT-yLv">
                                                                     <rect key="frame" x="142.5" y="0.0" width="137.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -16476,16 +16480,16 @@ JAMwLjAwA
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uda-Hq-anS">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uda-Hq-anS">
                                                             <rect key="frame" x="15" y="85.5" width="280" height="14.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Shift Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vve-Cn-KkB">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total Shift Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vve-Cn-KkB">
                                                                     <rect key="frame" x="0.0" y="0.0" width="137.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 28-12-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-9s-Cd9">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: 28-12-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-9s-Cd9">
                                                                     <rect key="frame" x="142.5" y="0.0" width="137.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -18263,7 +18267,7 @@ JAMwLjAwA
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIRE COST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep1-zc-WIu">
-                                                <rect key="frame" x="176" y="79.5" width="68.5" height="20"/>
+                                                <rect key="frame" x="175.5" y="79.5" width="69" height="20"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="1iN-AE-sDB"/>
@@ -18403,7 +18407,7 @@ JAMwLjAwA
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xez-si-JVx">
-                                                <rect key="frame" x="119.5" y="228.5" width="41.5" height="20"/>
+                                                <rect key="frame" x="119.5" y="228.5" width="41" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="2Cy-uP-KZy"/>
                                                 </constraints>
@@ -18601,12 +18605,6 @@ JAMwLjAwA
         </scene>
     </scenes>
     <designables>
-        <designable name="0HA-fc-btS">
-            <size key="intrinsicContentSize" width="220" height="44"/>
-        </designable>
-        <designable name="1l7-m2-Wyj">
-            <size key="intrinsicContentSize" width="224" height="44"/>
-        </designable>
         <designable name="2HE-pC-gGb">
             <size key="intrinsicContentSize" width="1230" height="17"/>
         </designable>
@@ -18620,7 +18618,7 @@ JAMwLjAwA
             <size key="intrinsicContentSize" width="61" height="18.5"/>
         </designable>
         <designable name="5UW-pW-iy4">
-            <size key="intrinsicContentSize" width="119" height="17"/>
+            <size key="intrinsicContentSize" width="109" height="17"/>
         </designable>
         <designable name="68P-Yj-2yW">
             <size key="intrinsicContentSize" width="67.5" height="18.5"/>
@@ -18636,9 +18634,6 @@ JAMwLjAwA
         </designable>
         <designable name="GzP-aS-t6N">
             <size key="intrinsicContentSize" width="168.5" height="18.5"/>
-        </designable>
-        <designable name="I9Y-Nq-dnp">
-            <size key="intrinsicContentSize" width="240" height="44"/>
         </designable>
         <designable name="Kq8-YD-W6e">
             <size key="intrinsicContentSize" width="110" height="18.5"/>
@@ -18694,9 +18689,6 @@ JAMwLjAwA
         <designable name="fFu-EQ-TkS">
             <size key="intrinsicContentSize" width="147.5" height="18.5"/>
         </designable>
-        <designable name="gIl-3z-Kc9">
-            <size key="intrinsicContentSize" width="224" height="44"/>
-        </designable>
         <designable name="ge5-8g-hNf">
             <size key="intrinsicContentSize" width="139.5" height="18.5"/>
         </designable>
@@ -18706,12 +18698,7 @@ JAMwLjAwA
         <designable name="kmP-ML-ZLK">
             <size key="intrinsicContentSize" width="98" height="18.5"/>
         </designable>
-        <designable name="lYF-4G-HwN">
-            <size key="intrinsicContentSize" width="224" height="44"/>
-        </designable>
-        <designable name="moo-6f-F8b">
-            <size key="intrinsicContentSize" width="10" height="0.0"/>
-        </designable>
+        <designable name="moo-6f-F8b"/>
         <designable name="noR-Fz-dgE">
             <size key="intrinsicContentSize" width="26" height="18.5"/>
         </designable>
