@@ -101,9 +101,9 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
         } */
         
         if isLogMate {
-            arrTitle = [kMyProfile, kBankDetails, kTripHistory, kEzygoInvoices, kMyRating,"Taxi Meter", kLogRecord,kInviteDriver, "Customer Support" ,kVehicleOption,kDocuments,kDriverPortal]
+            arrTitle = [kMyProfile, kBankDetails, kTripHistory, kEzygoInvoices, kMyRating,"Taxi Meter", kLogRecord,kInviteDriver, "Customer Support" ,kVehicleOption,kDocuments,kDriverPortal,kDeleteAccount]
         }else {
-            arrTitle = [kMyProfile, kBankDetails, kTripHistory, kEzygoInvoices, kMyRating,kLogRecord,kInviteDriver, "Customer Support" ,kVehicleOption,kDocuments,kDriverPortal]
+            arrTitle = [kMyProfile, kBankDetails, kTripHistory, kEzygoInvoices, kMyRating,kLogRecord,kInviteDriver, "Customer Support" ,kVehicleOption,kDocuments,kDriverPortal,kDeleteAccount]
         }
         tblView.reloadData()
         //         {
@@ -152,7 +152,8 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
     @objc func openUrlTermsOfUse() {
        
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ShowTripViewController") as? ShowTripViewController
-        viewController?.URLString = "https://ezygo.co.nz/web/ezygo-terms-conditions-without-JavaScript.pdf"
+        viewController?.URLString = "https://www.ezygo.co.nz/web/ezygo-terms-of-use-privacy.pdf"
+        //viewController?.URLString = "https://ezygo.co.nz/web/ezygo-terms-conditions-without-JavaScript.pdf"
         viewController?.strNavTitle = "Terms Of Use"
         self.navigationController?.pushViewController(viewController!, animated: true)
        
@@ -160,7 +161,8 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
     @objc func openUrlPrivacyPolicy() {
         
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ShowTripViewController") as? ShowTripViewController
-        viewController?.URLString = "https://ezygo.co.nz/web/ezygo-terms-conditions-without-JavaScript.pdf"
+        //viewController?.URLString = "https://ezygo.co.nz/web/ezygo-terms-conditions-without-JavaScript.pdf"
+        viewController?.URLString = "https://www.ezygo.co.nz/web/ezygo-terms-of-use-privacy.pdf"
         viewController?.strNavTitle = "Privacy Policy"
         self.navigationController?.pushViewController(viewController!, animated: true)
         
@@ -248,6 +250,9 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         else if strTitle == kDriverPortal {
             cell.iconMenuItem.image = UIImage.init(named: "iconDriverPortalUnSelect")
+            cell.lblTitle.text = strTitle
+        }else if strTitle == kDeleteAccount {
+            cell.iconMenuItem.image = UIImage.init(named: "c_delete")
             cell.lblTitle.text = strTitle
         }
         else if strTitle == "Customer Support" {
@@ -403,6 +408,22 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.navigationController?.pushViewController(next, animated: true)
             return
         }
+        
+        if strTitle == kDeleteAccount {
+            sideMenuController?.toggle()
+            Singletons.sharedInstance.selectedMenuSection = indexPath.section
+            Singletons.sharedInstance.selectedMenuIndex = indexPath.row
+            let alert = UIAlertController.init(title: "Are your sure you want to delete account" , message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Delete", style: .default, handler: { (action) in
+                self.webserviceForDeleteDriverAccount()
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+                
+            }))
+            
+            (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController?.present(alert, animated: true, completion: nil)
+        }
+
         if strTitle == kDocuments {
             sideMenuController?.toggle()
             Singletons.sharedInstance.selectedMenuSection = indexPath.section
@@ -418,7 +439,9 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
             Singletons.sharedInstance.selectedMenuIndex = indexPath.row
 
             let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ShowTripViewController") as? ShowTripViewController
-            viewController?.URLString = "https://ezygo.co.nz/web/DriverPanel/loginFromApp/43/e5-f1J5F13s:APA91bEglX-jutCMRh90pDkRQ0kNPfYkQ0iM_kqVrCemXuLw7EsU576tD9Pszk8HWCzedb549i94sfvXdoBwHCnJuoflh55-ChUYCqFObpAYFGT_I9jrBsrcUGy_NJ4CJEtsDOfMQU4R"
+            viewController?.URLString = "https://ezygo.co.nz/web/DriverPanel/loginFromApp/196/dlekrHnhkcY:APA91bE_zjbEyaB2F_fe3J0vNNCtpb9ZLoQ_qWHkZXenFwqfP4QC0JztsEyY70VZ5W7wNM8-QAgTxi10asoKk5R7F79J0491rTz5NI9hE7h6AHtski6yfQOOhrkXPzmpOyCfaTErV4yh"
+            
+            //"https://ezygo.co.nz/web/DriverPanel/loginFromApp/43/e5-f1J5F13s:APA91bEglX-jutCMRh90pDkRQ0kNPfYkQ0iM_kqVrCemXuLw7EsU576tD9Pszk8HWCzedb549i94sfvXdoBwHCnJuoflh55-ChUYCqFObpAYFGT_I9jrBsrcUGy_NJ4CJEtsDOfMQU4R"
             viewController?.strNavTitle = kDriverPortal
             self.navigationController?.pushViewController(viewController!, animated: true)
             return
@@ -731,5 +754,53 @@ class MenuController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
     }
+    //MARK: -  Delete Driver account Api
+    func webserviceForDeleteDriverAccount()
+    {
+        var dictData = [String:AnyObject]()
+        dictData[profileKeys.kDriverId] = Singletons.sharedInstance.strDriverID as AnyObject
+        webserviceForDeleteAccount(dictData as AnyObject) { (result, status) in
+            
+            if (status) {
+                print(result)
+                let socket = (UIApplication.shared.delegate as! AppDelegate).Socket
+                socket?.off(socketApiKeys.kReceiveBookingRequest)
+                socket?.off(socketApiKeys.kBookLaterDriverNotify)
+                socket?.off(socketApiKeys.kGetBookingDetailsAfterBookingRequestAccepted)
+                socket?.off(socketApiKeys.kAdvancedBookingInfo)
+                socket?.off(socketApiKeys.kReceiveMoneyNotify)
+                socket?.off(socketApiKeys.kAriveAdvancedBookingRequest)
+                socket?.off(socketApiKeys.kDriverCancelTripNotification)
+                socket?.off(socketApiKeys.kAdvancedBookingDriverCancelTripNotification)
+                Singletons.sharedInstance.setPasscode = ""
+                Singletons.sharedInstance.isPasscodeON = false
+                socket?.disconnect()
+                // add toke key code here if need
+                Singletons.sharedInstance.isDriverLoggedIN = false
+
+                let loginVw = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let navigationController = UINavigationController(rootViewController: loginVw)
+                appDelegate.window?.rootViewController = navigationController
+                self.navigationController?.popToRootViewController(animated: true)
+             
+            }
+            else {
+                print(result)
+                
+                if let res = result as? String {
+                    Utilities.showAlert(appName.kAPPName, message: res, vc: self)
+                }
+                else if let resDict = result as? NSDictionary {
+                    Utilities.showAlert(appName.kAPPName, message: resDict.object(forKey: "message") as! String, vc: self)
+                }
+                else if let resAry = result as? NSArray {
+                    Utilities.showAlert(appName.kAPPName, message: (resAry.object(at: 0) as! NSDictionary).object(forKey: "message") as! String, vc: self)
+                }
+            }
+        }
+ 
+    }
+    
     
 }

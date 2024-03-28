@@ -157,6 +157,7 @@ let kVehicleOption: String = "Vehicle Option"
 let kDocuments: String = "Documents"
 let kSettings : String = "Settings"
 let kDriverPortal : String = "Driver Portal"
+let kDeleteAccount : String = "Delete Account"
 let kSignout : String = "Logout"
 
 

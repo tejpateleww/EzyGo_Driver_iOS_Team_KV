@@ -41,6 +41,7 @@ let LogRecordHistory = WebserviceURLs.kLogRecordHistory
 let CurrentBooking = WebserviceURLs.kCurrentBooking
 
 let AddNewCard = WebserviceURLs.kAddNewCard
+let DeleterAccount = WebserviceURLs.kDeleterAccount
 let CardListing = WebserviceURLs.kCards
 let AddMoneyToWallet = WebserviceURLs.kAddMoney
 let TransactionHistory = WebserviceURLs.kTransactionHistory
@@ -403,6 +404,13 @@ func webserviceForAddNewCardInWallet(_ dictParams: AnyObject, completion: @escap
     let url = AddNewCard
     postData(dictParams, nsURL: url, completion: completion)
 }
+
+func webserviceForDeleteAccount(_ dictParams: AnyObject, completion: @escaping(_ result: AnyObject, _ success: Bool) -> Void)
+{
+    let url = DeleterAccount
+    postData(dictParams, nsURL: url, completion: completion)
+}
+
 
 //-------------------------------------------------------------
 // MARK: - Webservice For Card Listing in Wallet

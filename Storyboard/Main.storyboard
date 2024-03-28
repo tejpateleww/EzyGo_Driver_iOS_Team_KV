@@ -8354,7 +8354,7 @@ JAMwLjAwA
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRF-J9-7Yu">
-                            <rect key="frame" x="130.66666666666666" y="31" width="59" height="21"/>
+                            <rect key="frame" x="130.5" y="31" width="59" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" red="1" green="0.63921568630000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -8383,7 +8383,7 @@ JAMwLjAwA
                             <rect key="frame" x="59" y="24" width="22" height="35"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Desk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n5-Vu-uJl">
-                                    <rect key="frame" x="-13.333333333333336" y="23" width="49" height="12"/>
+                                    <rect key="frame" x="-13.5" y="23" width="49" height="12"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                     <color key="textColor" red="0.9519875646" green="0.63859170679999999" blue="0.09045866877" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -16463,16 +16463,16 @@ JAMwLjAwA
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-JP-SH9">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PCB-JP-SH9">
                                                             <rect key="frame" x="15" y="66" width="280" height="14.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Shift End:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeJ-qs-sbO">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shift End:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeJ-qs-sbO">
                                                                     <rect key="frame" x="0.0" y="0.0" width="137.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: 28-12-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWW-sT-yLv">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 28-12-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWW-sT-yLv">
                                                                     <rect key="frame" x="142.5" y="0.0" width="137.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -16480,16 +16480,16 @@ JAMwLjAwA
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uda-Hq-anS">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uda-Hq-anS">
                                                             <rect key="frame" x="15" y="85.5" width="280" height="14.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total Shift Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vve-Cn-KkB">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Shift Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vve-Cn-KkB">
                                                                     <rect key="frame" x="0.0" y="0.0" width="137.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: 28-12-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-9s-Cd9">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 28-12-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-9s-Cd9">
                                                                     <rect key="frame" x="142.5" y="0.0" width="137.5" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -18605,6 +18605,12 @@ JAMwLjAwA
         </scene>
     </scenes>
     <designables>
+        <designable name="0HA-fc-btS">
+            <size key="intrinsicContentSize" width="220" height="44"/>
+        </designable>
+        <designable name="1l7-m2-Wyj">
+            <size key="intrinsicContentSize" width="224" height="44"/>
+        </designable>
         <designable name="2HE-pC-gGb">
             <size key="intrinsicContentSize" width="1230" height="17"/>
         </designable>
@@ -18614,11 +18620,8 @@ JAMwLjAwA
         <designable name="37X-sC-udM">
             <size key="intrinsicContentSize" width="142" height="18.5"/>
         </designable>
-        <designable name="4iv-oN-pzS">
-            <size key="intrinsicContentSize" width="61" height="18.5"/>
-        </designable>
         <designable name="5UW-pW-iy4">
-            <size key="intrinsicContentSize" width="109" height="17"/>
+            <size key="intrinsicContentSize" width="119" height="17"/>
         </designable>
         <designable name="68P-Yj-2yW">
             <size key="intrinsicContentSize" width="67.5" height="18.5"/>
@@ -18635,23 +18638,17 @@ JAMwLjAwA
         <designable name="GzP-aS-t6N">
             <size key="intrinsicContentSize" width="168.5" height="18.5"/>
         </designable>
+        <designable name="I9Y-Nq-dnp">
+            <size key="intrinsicContentSize" width="240" height="44"/>
+        </designable>
         <designable name="Kq8-YD-W6e">
             <size key="intrinsicContentSize" width="110" height="18.5"/>
-        </designable>
-        <designable name="Myf-Nv-IG6">
-            <size key="intrinsicContentSize" width="49" height="18"/>
         </designable>
         <designable name="Ny2-ga-tTV">
             <size key="intrinsicContentSize" width="273" height="17"/>
         </designable>
         <designable name="O5r-cS-QAs">
             <size key="intrinsicContentSize" width="105.5" height="18.5"/>
-        </designable>
-        <designable name="QB3-xg-5wE">
-            <size key="intrinsicContentSize" width="144" height="26"/>
-        </designable>
-        <designable name="RH1-wX-Y1I">
-            <size key="intrinsicContentSize" width="146" height="26"/>
         </designable>
         <designable name="S1o-oh-G4T">
             <size key="intrinsicContentSize" width="90" height="18.5"/>
@@ -18665,17 +18662,11 @@ JAMwLjAwA
         <designable name="WN5-XY-1NC">
             <size key="intrinsicContentSize" width="175" height="18.5"/>
         </designable>
-        <designable name="Ykr-V2-yjj">
-            <size key="intrinsicContentSize" width="61" height="18.5"/>
-        </designable>
         <designable name="ZMU-Er-PeY">
             <size key="intrinsicContentSize" width="47" height="18.5"/>
         </designable>
         <designable name="aS9-8G-WwE">
             <size key="intrinsicContentSize" width="64.5" height="18.5"/>
-        </designable>
-        <designable name="acx-R0-X43">
-            <size key="intrinsicContentSize" width="26" height="26"/>
         </designable>
         <designable name="b3b-aA-Ij0">
             <size key="intrinsicContentSize" width="273" height="17"/>
@@ -18689,6 +18680,9 @@ JAMwLjAwA
         <designable name="fFu-EQ-TkS">
             <size key="intrinsicContentSize" width="147.5" height="18.5"/>
         </designable>
+        <designable name="gIl-3z-Kc9">
+            <size key="intrinsicContentSize" width="224" height="44"/>
+        </designable>
         <designable name="ge5-8g-hNf">
             <size key="intrinsicContentSize" width="139.5" height="18.5"/>
         </designable>
@@ -18698,7 +18692,12 @@ JAMwLjAwA
         <designable name="kmP-ML-ZLK">
             <size key="intrinsicContentSize" width="98" height="18.5"/>
         </designable>
-        <designable name="moo-6f-F8b"/>
+        <designable name="lYF-4G-HwN">
+            <size key="intrinsicContentSize" width="224" height="44"/>
+        </designable>
+        <designable name="moo-6f-F8b">
+            <size key="intrinsicContentSize" width="10" height="0.0"/>
+        </designable>
         <designable name="noR-Fz-dgE">
             <size key="intrinsicContentSize" width="26" height="18.5"/>
         </designable>
@@ -18716,9 +18715,6 @@ JAMwLjAwA
         </designable>
         <designable name="t3T-GT-qqs">
             <size key="intrinsicContentSize" width="83.5" height="18.5"/>
-        </designable>
-        <designable name="tge-xf-N3A">
-            <size key="intrinsicContentSize" width="65" height="18"/>
         </designable>
         <designable name="u3E-eq-RJp">
             <size key="intrinsicContentSize" width="273" height="17"/>

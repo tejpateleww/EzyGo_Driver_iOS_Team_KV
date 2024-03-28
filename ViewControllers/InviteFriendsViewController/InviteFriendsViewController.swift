@@ -102,7 +102,8 @@ class InviteFriendsViewController: ParentViewController
     
     @IBAction func btnMoreOptionClicked(_ sender: Any) {
         let strInviteMessage = "\(driverFullName) has invited you to become a EzyGo Driver \n \n"
-        let urlStr = "Click here: \nitms://itunes.apple.com/us/app/apple-store/id375380948?mt=8 \n \n"
+        //let urlStr = "Click here: \nitms://itunes.apple.com/us/app/apple-store/id375380948?mt=8 \n \n"
+        let urlStr = "Click here: \nitems: https://apps.apple.com/us/app/ezygo-drivers/id1445117658 \n \n"
         let strInviteCode = "Your invite code is: \(lblInviteCode.text ?? "")"
         
         let finalShareUrl = strInviteMessage + urlStr + strInviteCode

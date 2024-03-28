@@ -227,9 +227,11 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
                 {
                     manager.startUpdatingLocation()
                     manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+                    manager.desiredAccuracy = kCLLocationAccuracyBest
                     manager.activityType = .automotiveNavigation
                     manager.startMonitoringSignificantLocationChanges()
                     manager.allowsBackgroundLocationUpdates = true
+                    //manager.distanceFilter = 10.0
                     //                    manager.distanceFilter = //
                 }
                 

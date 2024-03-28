@@ -47,6 +47,7 @@ struct WebserviceURLs {
     static let kGetDistaceFromBackend                   = "FindDistance/"
     static let kCurrentBooking                          = "CurrentBooking/"
     static let kAddNewCard                              = "AddNewCard"
+    static let kDeleterAccount                          = "DeleteAccount"
     static let kCards                                   = "Cards/"
     static let kAddMoney                                = "AddMoney"
     static let kTransactionHistory                      = "TransactionHistory/"
