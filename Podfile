@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'ezygo-Driver' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -33,4 +33,16 @@ pod 'TTSegmentedControl'
 pod 'MBCircularProgressBar'
 pod 'ActionSheetPicker-3.0'
 pod 'Sheeeeeeeeet'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf'
+      config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = "YES"
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
+      config.build_settings["ONLY_ACTIVE_ARCH"] = "NO"
+      config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+    end
+  end
 end
