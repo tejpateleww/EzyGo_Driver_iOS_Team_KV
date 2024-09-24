@@ -3447,61 +3447,81 @@ class HomeViewController: ParentViewController, CLLocationManagerDelegate,ARCarM
         Singletons.sharedInstance.isPickUPPasenger = true
         timerForUpdateCurrentLocation.invalidate() // Bhavesh
         
-        let BookingInfo : NSDictionary!
-                   print("crashed  \(#function)")
-        if((((self.aryPassengerData as NSArray).object(at: 0) as! NSDictionary).object(forKey: "BookingInfo") as? NSDictionary) == nil)
-        {
-            // print ("Yes its  array ")
-            BookingInfo = (((self.aryPassengerData as NSArray).object(at: 0) as! NSDictionary).object(forKey: "BookingInfo") as! NSArray).object(at: 0) as! NSDictionary
-        }
-        else
-        {
-            // print (Yes its dictionary")
-            BookingInfo = (((self.aryPassengerData as NSArray).object(at: 0) as! NSDictionary).object(forKey: "BookingInfo") as! NSDictionary) //.object(at: 0) as! NSDictionary
+        // Safely unwrap aryPassengerData
+        guard let passengerDataArray = self.aryPassengerData as? [[String: Any]],
+              let firstPassengerData = passengerDataArray.first,
+              let bookingInfo = firstPassengerData["BookingInfo"] else {
+            print("Error: Passenger data or BookingInfo is missing.")
+            return
         }
         
-        // ------------------------------------------------------------
+        let BookingInfo: NSDictionary
         
-        //        SingletonsForMeter.sharedInstance.vehicleModelID = (Int(BookingInfo.object(forKey: "ModelId") as! NSNumber))
+        if let bookingInfoDict = bookingInfo as? NSDictionary {
+            BookingInfo = bookingInfoDict
+        } else if let bookingInfoArray = bookingInfo as? NSArray,
+                  let bookingInfoDict = bookingInfoArray.firstObject as? NSDictionary {
+            BookingInfo = bookingInfoDict
+        } else {
+            print("Error: Invalid BookingInfo format.")
+            return
+        }
         
+        // VehicleID handling
         var VehicleID = String()
         
         if let vehId = BookingInfo.object(forKey: "ModelId") as? String {
             VehicleID = vehId
-        }
-        else if let vehId = BookingInfo.object(forKey: "ModelId") as? Int {
+        } else if let vehId = BookingInfo.object(forKey: "ModelId") as? Int {
             VehicleID = "\(vehId)"
+        } else {
+            print("Error: ModelId is missing or of unsupported type.")
+            return
         }
         
-        SingletonsForMeter.sharedInstance.vehicleModelID = Int(VehicleID)!
+        SingletonsForMeter.sharedInstance.vehicleModelID = Int(VehicleID) ?? 0
         
-        let DropOffLat = BookingInfo.object(forKey: "DropOffLat") as! String
-        let DropOffLon = BookingInfo.object(forKey: "DropOffLon") as! String
+        // Safely unwrap and convert DropOffLat and DropOffLon
+        guard let dropOffLatString = BookingInfo.object(forKey: "DropOffLat") as? String,
+              let dropOffLonString = BookingInfo.object(forKey: "DropOffLon") as? String,
+              let dropOffLat = Double(dropOffLatString),
+              let dropOffLon = Double(dropOffLonString) else {
+            print("Error: Invalid or missing DropOff coordinates.")
+            return
+        }
         
-        Singletons.sharedInstance.startedTripLatitude = Double(BookingInfo.object(forKey: "PickupLat") as! String)!
-        Singletons.sharedInstance.startedTripLongitude = Double(BookingInfo.object(forKey: "PickupLng") as! String)!
+        // Safely unwrap and convert PickupLat and PickupLng
+        guard let pickupLatString = BookingInfo.object(forKey: "PickupLat") as? String,
+              let pickupLngString = BookingInfo.object(forKey: "PickupLng") as? String,
+              let pickupLat = Double(pickupLatString),
+              let pickupLng = Double(pickupLngString) else {
+            print("Error: Invalid or missing Pickup coordinates.")
+            return
+        }
         
-//        self.lblLocationOnMap.text = BookingInfo.object(forKey: "DropoffLocation") as? String
+        Singletons.sharedInstance.startedTripLatitude = pickupLat
+        Singletons.sharedInstance.startedTripLongitude = pickupLng
         
-        let PickupLat = self.defaultLocation.coordinate.latitude
-        let PickupLng = self.defaultLocation.coordinate.longitude
+        // Safely get the defaultLocation
+        let PickupLatDefault = self.defaultLocation.coordinate.latitude
+        let PickupLngDefault = self.defaultLocation.coordinate.longitude
         
-        let dummyLatitude = Double(PickupLat) - Double(DropOffLat)!
-        let dummyLongitude = Double(PickupLng) - Double(DropOffLon)!
+        let dummyLatitude = PickupLatDefault - dropOffLat
+        let dummyLongitude = PickupLngDefault - dropOffLon
         
-        let waypointLatitude = self.defaultLocation.coordinate.latitude - dummyLatitude
-        let waypointSetLongitude = self.defaultLocation.coordinate.longitude - dummyLongitude
+        let waypointLatitude = PickupLatDefault - dummyLatitude
+        let waypointLongitude = PickupLngDefault - dummyLongitude
         
+        let originalLoc: String = "\(PickupLatDefault),\(PickupLngDefault)"
+        let destinationLoc: String = "\(dropOffLat),\(dropOffLon)"
         
-        let originalLoc: String = "\(PickupLat),\(PickupLng)"
-        let destiantionLoc: String = "\(DropOffLat),\(DropOffLon)"
+        zoomoutCamera(PickupLat: PickupLatDefault, PickupLng: PickupLngDefault, DropOffLat: dropOffLatString, DropOffLon: dropOffLonString)
         
-        zoomoutCamera(PickupLat: PickupLat, PickupLng: PickupLng, DropOffLat: DropOffLat, DropOffLon: DropOffLon)
+        self.getDirectionsSeconMethod(origin: originalLoc, destination: destinationLoc, completionHandler: nil)
         
-        self.getDirectionsSeconMethod(origin: originalLoc, destination: destiantionLoc, completionHandler: nil)
-        print("crashed  \(#function)")
+        print("Finished pickupPassengerFromLocation execution")
     }
-    
+
     func getDistanceForPickupPassengerFromLocation() {
         
         var BookingInfo = NSDictionary()

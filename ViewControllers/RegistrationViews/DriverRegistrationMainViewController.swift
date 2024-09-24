@@ -45,7 +45,17 @@ class DriverRegistrationMainViewController: UIViewController {
     }
     */
     @IBAction func backClick(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        guard let page = objRegistration?.nFillPageNumber else {
+            self.navigationController?.popViewController(animated: true)
+            return
+        }
+        if page == 0 {
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            objRegistration.nFillPageNumber -= 1
+            changeContentOffset(objRegistration.nFillPageNumber)
+        }
+       
     }
     func changeContentOffset(_ page: CGFloat) {
         let offSet =  self.view.frame.width * page
