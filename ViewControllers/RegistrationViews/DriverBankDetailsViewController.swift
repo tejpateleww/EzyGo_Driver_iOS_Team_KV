@@ -39,7 +39,12 @@ class DriverBankDetailsViewController: UIViewController {
         if objRegistration != nil {
             imgVwProfile.sd_setImage(with: URL.init(string:WebserviceURLs.kImageBaseURL + objRegistration.strProfileImageUrl), placeholderImage: UIImage.init(named: "placeHolderProfile"))
         }
-        
+        txtBankName.text = objRegistration.strBankName
+        txtBankBranch.text = objRegistration.strBankBranch
+        txtAccountHolderName.text = objRegistration.strAccountHolder
+        txtAccountNumber.text = objRegistration.strAccountNumber
+        btnCollectFromOffice.isSelected = objRegistration.isColllectFromOffice 
+       
     
     }
     /*

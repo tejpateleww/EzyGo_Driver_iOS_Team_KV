@@ -53,6 +53,8 @@ class DriverPersonalDetailsViewController: UIViewController,UINavigationControll
     
     @IBOutlet var imgVwFlag: UIImageView!
     
+    let relations = ["Father","Mother","Brother","Sister","Wife","Husband","Friend","Other"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,6 +126,30 @@ class DriverPersonalDetailsViewController: UIViewController,UINavigationControll
             if !objRegistration.strProfileImageUrl.isEmptyOrWhitespace() {
                 imgVwProfile.sd_setImage(with: URL.init(string: WebserviceURLs.kImageBaseURL + objRegistration.strProfileImageUrl) , placeholderImage: UIImage.init(named: "placeHolderProfile"))
             }
+            txtFirstName.text = objRegistration.strFirstName
+            txtLastName.text = objRegistration.strLastName
+            txtStreetAddress.text = objRegistration.strStreetAddress
+            txtSuburb.text = objRegistration.strSuburb
+            txtCity.text = objRegistration.strCity
+            txtPostCode.text = objRegistration.strPostCode
+            txtCountry.text = objRegistration.strCountry
+            txtInviteCode.text  = objRegistration.strInviteCode
+            txtGstNumber.text = objRegistration.strGstnumber
+            txtRegistrationName.text = objRegistration.strGstRegistrationName
+            txtKinFirstName.text = objRegistration.strKinFirstName
+            txtKinLastName.text = objRegistration.strKinLastName
+            txtKinMobileNumber.text = objRegistration.strKinMobileNumber
+            txtKinLandlineNumber.text = objRegistration.strKinLandlineNumber
+            btnMale.isSelected = objRegistration.strGender == "male"
+            btnFeMale.isSelected = objRegistration.strGender == "female"
+            self.btnRelationshipWithKin.setTitle( objRegistration.strRelationshipWithKin, for: .normal)
+            if objRegistration.strKinCountryCode == "2" {
+                setKinCountry(2)
+            }else {
+                setKinCountry(1)
+            }
+            
+            
         }
     }
     /*
@@ -151,14 +177,7 @@ class DriverPersonalDetailsViewController: UIViewController,UINavigationControll
             //            print(selectedItem.value)
             
             if let selectedRow = selectedItem.value as? Int {
-                if selectedRow == 2 {
-                    self.lblCountryCode.text = CountryCode.NZ.rawValue
-                    self.imgVwFlag.image = UIImage.init(named: "NZ")
-                    
-                }else if selectedRow == 1 {
-                    self.lblCountryCode.text = CountryCode.Au.rawValue
-                    self.imgVwFlag.image = UIImage.init(named: "AU")
-                }
+                self.setKinCountry(selectedRow)
             }
             
         }
@@ -166,11 +185,23 @@ class DriverPersonalDetailsViewController: UIViewController,UINavigationControll
         actionSheet.present(in: self, from: view)
         
     }
+    
+    func setKinCountry(_ selectedRow: Int) {
+        if selectedRow == 2 {
+            self.lblCountryCode.text = CountryCode.NZ.rawValue
+            self.imgVwFlag.image = UIImage.init(named: "NZ")
+            
+        }else if selectedRow == 1 {
+            self.lblCountryCode.text = CountryCode.Au.rawValue
+            self.imgVwFlag.image = UIImage.init(named: "AU")
+        }
+    }
+    
     @IBAction func relationShipWithKinClick(_ sender: UIButton) {
-        let arr = ["Father","Mother","Brother","Sister","Wife","Husband","Friend","Other"]
         
-        ActionSheetStringPicker.show(withTitle: "Relationship with kin", rows: arr, initialSelection: 0, doneBlock: { (actionSheet, index, obj) in
-            self.btnRelationshipWithKin.setTitle(arr[index], for: .normal)
+        
+        ActionSheetStringPicker.show(withTitle: "Relationship with kin", rows: relations, initialSelection: 0, doneBlock: { (actionSheet, index, obj) in
+            self.btnRelationshipWithKin.setTitle(self.relations[index], for: .normal)
         }, cancel: { (actionSheet) in
             
         }, origin: self.view)

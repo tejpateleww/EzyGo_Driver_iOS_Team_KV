@@ -69,6 +69,16 @@ class DriverSelectVehicleTypesViewController: UIViewController,UINavigationContr
                 btnSelectCar.sd_setImage(with: URL.init(string: WebserviceURLs.kImageBaseURL + objRegistration.strVehicleImageUrl), for: .normal) { (img, error, cache, url) in
                 }
             }
+            
+            txtOwnerFullName.text = objRegistration.strVehicleOwnerFullName
+            txtVehiclePlateNumber.text = objRegistration.strVehiclePlateNumber
+            txtVehicleMake.text = objRegistration.strVehicleMake
+            txtVehicleModel.text = objRegistration.strVehicleModel
+            txtYearOfManufacture.text = objRegistration.strVehicleManufactureYear
+            txtColor.text = objRegistration.strVehicleColor
+            
+            btnNoOfPassanger.setTitle(objRegistration.strNoOfPassenger , for: .normal)
+            btnCarType.setTitle(objRegistration.strVehicleType, for: .normal)
         }
     }
 
